@@ -28,8 +28,6 @@ TOOLS = {
 
 
 
-import os
-
 class ToolInstaller:
     def __init__(self, tool_name, install_commands):
         self.tool_name = tool_name
