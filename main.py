@@ -13,7 +13,17 @@ TOOLS = {
         "pip install git-dumper",
         "echo 'Git-Dumper installed successfully!'"
     ],
-    # Add more tools as needed
+    "hydra": [
+        "sudo apt-get update",
+        "sudo apt-get install hydra -y"
+    ],
+    "hashcat": [
+        "sudo apt-get update",
+        "sudo apt-get install hashcat -y"
+    ],
+    "sqlmap": [
+        "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev"
+    ],
 }
 
 
@@ -44,7 +54,22 @@ class GitDumperInstaller(ToolInstaller):
     def __init__(self):
         super().__init__("git-dumper", TOOLS["git-dumper"])
         
+class HydraInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("hydra", TOOLS["hydra"])
         
+class HashCatInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("hashcat", TOOLS["hashcat"])
+
+class SqlMapInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+
+
+
+
+
 class PentestToolsManager:
     def __init__(self):
         self.tools = []
