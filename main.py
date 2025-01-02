@@ -7,7 +7,8 @@ TOOLS = {
     ],
     "dirsearch": [
         "git clone https://github.com/maurosoria/dirsearch.git",
-        "cd dirsearch && pip install -r requirements.txt"
+        "cd dirsearch && pip install -r requirements.txt",
+        "cd"
     ],
     "git-dumper": [
         "pip install git-dumper",
@@ -22,7 +23,67 @@ TOOLS = {
         "sudo apt-get install hashcat -y"
     ],
     "sqlmap": [
-        "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev"
+        "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev",
+        "cd sqlmap-dev && pip3 install -r requirements.txt",
+        "cd"
+    ],
+    "pipx": [
+        "pip install pipx",
+        "echo 'pipx' installed successfully!"
+    ],
+    "wpscan": [
+        "sudo apt-get update",
+        "sudo apt-get install rubygems",
+        "gem install wpscan"
+    ],
+    "bettercap": [
+        "sudo apt-get update",
+        "sudo apt-get install bettercap"
+    ],
+    "netcat": [
+        "sudo apt-get update",
+        "sudo apt-get install netcat"
+    ],
+    "curl": [
+       "sudo apt-get update",
+        "sudo apt-get install curl"
+    ],
+    "dumpsterdiver": [
+        "sudo apt-get update",
+        "sudo apt-get install dumpsterdiver"
+    ],
+    "exiftool": [
+       "sudo apt-get update",
+        "sudo apt-get install exiftool"
+    ],
+    "exploitdb": [
+        "sudo apt-get update",
+        "sudo apt-get install exploitdb"
+    ],
+    "ffuf": [
+       "sudo apt-get update",
+        "sudo apt-get install ffuf"
+    ],
+    "metasploit": [
+       "sudo apt-get update",
+        "sudo apt-get install metasploit-framework"
+    ],
+    "ollydbg": [
+       "sudo apt-get update",
+        "sudo apt-get install ollydbg"
+    ],
+    "sherclock": [
+       "sudo apt-get update",
+        "sudo apt-get install sherlock"
+    ],
+    "wireshark": [
+        "sudo add-apt-repository ppa:wireshark-dev/stable",
+        "sudo apt-get update",
+        "sudo apt-get install bettercap"
+    ],
+    "zap-proxy": [
+       "sudo apt-get update",
+        "sudo apt-get install zaproxy"
     ],
 }
 
@@ -63,11 +124,64 @@ class HashCatInstaller(ToolInstaller):
 class SqlMapInstaller(ToolInstaller):
     def __init__(self):
         super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class PipxInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
 
+class WpScanInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
 
+class betterCapInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
 
+class NetCatInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
 
+class CurlInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
 
+class DumpsterDiverInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+
+class ExifToolInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class ExploitDBInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class FFUFInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class MetaSploitInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class OllyDbgInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class SherlockInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class WireSharkInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+class ZaproxyInstaller(ToolInstaller):
+    def __init__(self):
+        super().__init__("sqlmap", TOOLS["sqlmap"])
+        
+        
 class PentestToolsManager:
     def __init__(self):
         self.tools = []
