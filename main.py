@@ -72,7 +72,7 @@ TOOLS = {
        "sudo apt-get update",
         "sudo apt-get install ollydbg"
     ],
-    "sherclock": [
+    "sherlock": [
        "sudo apt-get update",
         "sudo apt-get install sherlock"
     ],
