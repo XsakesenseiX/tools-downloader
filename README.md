@@ -27,7 +27,7 @@ python3 main.py
 ```
 The script will display a list of available tools and prompt you to choose an installation option:
 
-```python
+```bash
 1. Install specific tools (comma-separated)
 2. Install all tools
 Enter your choice (1 or 2):
@@ -35,7 +35,7 @@ Enter your choice (1 or 2):
 
 If you select option 1, you will be prompted to enter the names of the tools you want to install, separated by commas.
 For example, to install nmap and dirsearch, you would type:
-```python
+```bash
 Enter the tools you want to install (comma-separated): nmap,dirsearch
 ```
 The script will then attempt to install the specified tools.
