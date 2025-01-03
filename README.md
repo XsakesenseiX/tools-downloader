@@ -10,14 +10,14 @@ This Python script automates the installation of penetration testing tools on De
 Clone the repository:
 ```bash
 
-git clone https://github.com/your-username/automatic-penetration-testing-tool-installer.git
+git clone https://github.com/XsakesenseiX/tools-downloader.git
 ```
 Navigate to the project directory:
 ```bash
 
-cd automatic-penetration-testing-tool-installer
+cd tools-downloader
 ```
-Usage
+## Usage
 
 Run the script:
 
@@ -30,43 +30,42 @@ The script will display a list of available tools and prompt you to choose an in
 ```python
 1. Install specific tools (comma-separated)
 2. Install all tools
-
-Options
-
-Install specific tools (comma-separated):
+Enter your choice (1 or 2):
 ```
 
-If you select this option, you will be prompted to enter the names of the tools you want to install, separated by commas.
+If you select option 1, you will be prompted to enter the names of the tools you want to install, separated by commas.
 For example, to install nmap and dirsearch, you would type:
+```python
 Enter the tools you want to install (comma-separated): nmap,dirsearch
+```
 The script will then attempt to install the specified tools.
 Install all tools:
 
-If you select this option, the script will attempt to install all the tools listed in the script.
+If you select option 2, the script will attempt to install all the tools listed in the script.
 Supported Tools
 
 The script currently supports the installation of the following penetration testing tools:
 
-nmap
-dirsearch
-git-dumper
-hydra
-hashcat
-sqlmap
-pipx
-wpscan
-bettercap
-curl
-dumpsterdiver
-exiftool
-exploitdb
-ffuf
-metasploit
-ollydbg
-sherlock
-wireshark
-zaproxy
-Note:
+- nmap
+- dirsearch
+- git-dumper
+- hydra
+- hashcat
+- sqlmap
+- pipx
+- wpscan
+- bettercap
+- curl
+- dumpsterdiver
+- exiftool
+- exploitdb
+- ffuf
+- metasploit
+- ollydbg
+- sherlock
+- wireshark
+- zaproxy
+## Note:
 
 This script has been tested on Debian-based systems. The installation commands may need to be modified for other Linux distributions.
 Some of the listed tools may require additional dependencies. The script will attempt to install these dependencies automatically.
@@ -75,6 +74,6 @@ Contributing
 
 We welcome contributions to this project. If you would like to add support for a new tool, please feel free to submit a pull request.
 
-Disclaimer
+## Disclaimer!
 
 This script is provided for educational purposes only. The authors are not responsible for any misuse of this script or the tools it installs.
