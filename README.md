@@ -70,7 +70,7 @@ The script currently supports the installation of the following penetration test
 This script has been tested on Debian-based systems. The installation commands may need to be modified for other Linux distributions.
 Some of the listed tools may require additional dependencies. The script will attempt to install these dependencies automatically.
 It is recommended to run this script with sudo privileges to ensure proper installation permissions.
-Contributing
+## Contributing
 
 We welcome contributions to this project. If you would like to add support for a new tool, please feel free to submit a pull request.
 
