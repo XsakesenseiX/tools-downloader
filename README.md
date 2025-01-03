@@ -39,7 +39,6 @@ For example, to install nmap and dirsearch, you would type:
 Enter the tools you want to install (comma-separated): nmap,dirsearch
 ```
 The script will then attempt to install the specified tools.
-Install all tools:
 
 If you select option 2, the script will attempt to install all the tools listed in the script.
 ## Supported Tools
