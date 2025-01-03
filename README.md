@@ -1,34 +1,34 @@
-Automatic Penetration Testing Tool Installer
+# Automatic Penetration Testing Tool Installer
 
 This Python script automates the installation of penetration testing tools on Debian-based Linux distributions. It provides a user-friendly interface that allows users to either install all the listed tools or choose specific ones for installation.
 
-Requirements
+## Requirements
 
-Python 3
-Installation
+- Python 3
+## Installation
 
 Clone the repository:
-Bash
+'''Bash
 
 git clone https://github.com/your-username/automatic-penetration-testing-tool-installer.git
+'''
 Navigate to the project directory:
-Bash
+'''Bash
 
 cd automatic-penetration-testing-tool-installer
-Install the required libraries:
-Bash
-
-pip install os
+'''
 Usage
 
 Run the script:
-Bash
+'''Bash
 
-python main.py
+python3 main.py
+'''
 The script will display a list of available tools and prompt you to choose an installation option:
-
+'''python
 1. Install specific tools (comma-separated)
 2. Install all tools
+'''
 Options
 
 Install specific tools (comma-separated):
