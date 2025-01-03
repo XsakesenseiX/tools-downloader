@@ -6,6 +6,7 @@ TOOLS = {
         "sudo apt-get install nmap -y"
     ],
     "dirsearch": [
+        "cd"
         "git clone https://github.com/maurosoria/dirsearch.git",
         "cd dirsearch && pip install -r requirements.txt",
         "cd"
@@ -23,6 +24,7 @@ TOOLS = {
         "sudo apt-get install hashcat -y"
     ],
     "sqlmap": [
+        "cd"
         "git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev",
         "cd sqlmap-dev && pip3 install -r requirements.txt",
         "cd"
