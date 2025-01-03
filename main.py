@@ -40,10 +40,6 @@ TOOLS = {
         "sudo apt-get update",
         "sudo apt-get install bettercap"
     ],
-    "netcat": [
-        "sudo apt-get update",
-        "sudo apt-get install netcat"
-    ],
     "curl": [
        "sudo apt-get update",
         "sudo apt-get install curl"
@@ -134,10 +130,6 @@ class WpScanInstaller(ToolInstaller):
         super().__init__("sqlmap", TOOLS["sqlmap"])
 
 class betterCapInstaller(ToolInstaller):
-    def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
-
-class NetCatInstaller(ToolInstaller):
     def __init__(self):
         super().__init__("sqlmap", TOOLS["sqlmap"])
 
