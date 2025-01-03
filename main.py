@@ -199,16 +199,29 @@ def main():
     for tool in TOOLS:
         print(f"- {tool}")
 
-    selected_tools = input("Enter the tools you want to install (comma-separated): ").strip().split(",")
-    selected_tools = [tool.strip() for tool in selected_tools]
+    print("\nOptions:")
+    print("1. Install specific tools (comma-separated)")
+    print("2. Install all tools")
+
+    choice = input("Enter your choice (1 or 2): ").strip()
 
     manager = PentestToolsManager()
 
-    for tool in selected_tools:
-        if tool in TOOLS:
+    if choice == "1":
+        selected_tools = input("Enter the tools you want to install (comma-separated): ").strip().split(",")
+        selected_tools = [tool.strip() for tool in selected_tools]
+
+        for tool in selected_tools:
+            if tool in TOOLS:
+                manager.add_tool(ToolInstaller(tool, TOOLS[tool]))
+            else:
+                print(f"Tool '{tool}' not found. Skipping.")
+    elif choice == "2":
+        for tool in TOOLS:
             manager.add_tool(ToolInstaller(tool, TOOLS[tool]))
-        else:
-            print(f"Tool '{tool}' not found. Skipping.")
+    else:
+        print("Invalid choice. Exiting.")
+        return
 
     manager.install_all()
 
