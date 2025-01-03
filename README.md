@@ -42,7 +42,7 @@ The script will then attempt to install the specified tools.
 Install all tools:
 
 If you select option 2, the script will attempt to install all the tools listed in the script.
-Supported Tools
+## Supported Tools
 
 The script currently supports the installation of the following penetration testing tools:
 
