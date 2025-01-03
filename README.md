@@ -8,33 +8,33 @@ This Python script automates the installation of penetration testing tools on De
 ## Installation
 
 Clone the repository:
-'''bash
+```bash
 
 git clone https://github.com/your-username/automatic-penetration-testing-tool-installer.git
-'''
+```
 Navigate to the project directory:
-'''bash
+```bash
 
 cd automatic-penetration-testing-tool-installer
-'''
+```
 Usage
 
 Run the script:
 
-'''bash
+```bash
 
 python3 main.py
-'''
+```
 The script will display a list of available tools and prompt you to choose an installation option:
 
-'''python
+```python
 1. Install specific tools (comma-separated)
 2. Install all tools
 
 Options
 
 Install specific tools (comma-separated):
-'''
+```
 
 If you select this option, you will be prompted to enter the names of the tools you want to install, separated by commas.
 For example, to install nmap and dirsearch, you would type:
