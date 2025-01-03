@@ -123,55 +123,55 @@ class SqlMapInstaller(ToolInstaller):
         
 class PipxInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("pipx", TOOLS["pipx"])
 
 class WpScanInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("wpscan", TOOLS["wpscan"])
 
 class betterCapInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("bettercap", TOOLS["bettercap"])
 
 class CurlInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("curl", TOOLS["curl"])
 
 class DumpsterDiverInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("dumpsterdiver", TOOLS["dumpsterdiver"])
 
 class ExifToolInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("exiftool", TOOLS["exiftool"])
         
 class ExploitDBInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("exploitdb", TOOLS["exploitdb"])
         
 class FFUFInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("ffuf", TOOLS["ffuf"])
         
 class MetaSploitInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("metasploit", TOOLS["metasploit"])
         
 class OllyDbgInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("ollydbg", TOOLS["ollydbg"])
         
 class SherlockInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("sherlock", TOOLS["sherlock"])
         
 class WireSharkInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("wireshark", TOOLS["wireshark"])
         
 class ZaproxyInstaller(ToolInstaller):
     def __init__(self):
-        super().__init__("sqlmap", TOOLS["sqlmap"])
+        super().__init__("zaproxy", TOOLS["zaproxy"])
         
         
 class PentestToolsManager:

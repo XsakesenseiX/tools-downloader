@@ -74,6 +74,6 @@ It is recommended to run this script with sudo privileges to ensure proper insta
 
 We welcome contributions to this project. If you would like to add support for a new tool, please feel free to submit a pull request.
 
-## Disclaimer!
+## Disclaimer
 
 This script is provided for educational purposes only. The authors are not responsible for any misuse of this script or the tools it installs.
